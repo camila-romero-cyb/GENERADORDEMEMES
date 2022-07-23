@@ -6,176 +6,156 @@
     font-family: 'Montserrat', sans-serif; 
 }
 
-/**SECCION DE ENCABEZADO**/
+/*SECCION DE ENCABEZADO*/
 
 #header{
  background-color: #eed6ff;
  color:  #2502c8;
- display: block;
- border: 6px solid #2502c8 ;
  text-align: center;
 }
 
+/* MEME */
+
+.visual-image{
+    width: 600px;
+    height: 400px;
+    background-color: black;
+}
+
+.text-meme {
+    text-align: center;
+    font-size: 20px;
+    padding: 25px 0px 25px;
+      
+}
+
+.primary-box{
+background-color: rgb(244, 228, 255);
+width: 600px;
+height: 550px;
+margin: auto;
+}
+
+/* chequear*/
 
 .primary-title{
-    padding: 30px 0 20px 0;
-    text-transform: uppercase;
+padding: 20px 0 10px 0;
+text-transform: uppercase;
 }
 
 .section-image .section-text { 
-    display:none; 
+display:none; 
 }
 
 .buttons{
-    padding-bottom:20px;
+padding-bottom:10px;
 }
 
 .button-nav{
-    background-color:#2502c8;
-    color: white;
-    text-transform: uppercase;
-    font-size: 15px;
-    padding:5px 10px;
-    border: 3px solid #eed6ff;
-    border-radius: 30px;
+color: #2502c8;
+text-transform: uppercase;
+font-size: 15px;
+padding:5px 10px;
+border: 3px solid #eed6ff;
+border-radius: 30px;
 }
 
 .button-nav:hover{
-   color: #2502c8;
-   border: 3px solid #2502c8;
-   background-color: #eed6ff;
-   border-radius: 30px;
+color: white;
+border: 3px solid #2502c8;
+background-color: #2502c8;
+border-radius: 30px;
 }
- 
+
 
 /*/MODO OSCURO/*/
+
 .dark{
-    background-color: #232424;
-    color:white
+background-color: #232424;
+color:#2502c8;
 } 
 
 
-/** SECCION PANEL DE IMAGEN**/
-
-
+/* SECCION PANEL DE IMAGEN*/
 
 .title-sections{
-    text-align: center;
-    margin-bottom: 10px;
+text-align: center;
+margin-bottom: 10px;
 }
 
 .filter-image{
-    background-color: #2502c8;
-    color:white;
-    width: 280px;
-    margin-bottom: 30px;
-    padding: 20px;
-    position: absolute; right: 0px; top: 0px; z-index: 1;
+background-color: #2502c8;
+color:white;
+width: 280px;
+margin-bottom: 30px;
+padding: 20px;
+position: absolute; right: 0px; top: 0px; z-index: 1;
 }
 
 .background-list{
-    display: flex;
+display: flex;
 }
 
 .item-list{
-    order:1;
+order:1;
 }
 
 .url{
-    width: 100%;
+width: 100%;
 }
 
 .input-slider{
-    width: 100%;
+width: 100%;
 }
 
 h5{
-    margin: 10px 0 10px ;  
+margin: 10px 0 10px ;  
 }
 
 .filters-reset{
-    background-color:#2502c8;
-    color: white;
-    text-transform: uppercase;
-    font-size: 12px;
-    padding:5px 10px;
-    border: 3px solid #eed6ff;
-    
+background-color:#2502c8;
+color: white;
+text-transform: uppercase;
+font-size: 12px;
+padding:5px 10px;
+border: 3px solid #eed6ff;   
 }
 
 .filters-reset:hover{
-    color: #2502c8;
-    border: 3px solid #2502c8;
-    background-color: #eed6ff;
+color: #2502c8;
+border: 3px solid #2502c8;
+background-color: #eed6ff;
 }
 
-/*SECCION PANEL DE TEXTO/*/
+/*SECCION PANEL DE TEXTO*/
 
 .filter-text{
-    background-color: #2502c8;
-    color:white;
-    width: 280px;
-    padding: 20px;
-    position: absolute; right: 0px; top: 0px; z-index: 1;
+background-color: #2502c8;
+color:white;
+width: 280px;
+padding: 20px;
+position: absolute; right: 0px; top: 0px; z-index: 1;
 }
 
 .filter-option{
-    padding: 10px 0 10px;
+padding: 10px 0 10px;
 }
 
 .button-outline{
-    background-color:#2502c8;
-    color: white;
-    text-transform: uppercase;
-    font-size: 12px;
-    padding:5px 5px;
-    border: 3px solid #eed6ff;
+background-color:#2502c8;
+color: white;
+text-transform: uppercase;
+font-size: 12px;
+padding:5px 5px;
+border: 3px solid #eed6ff;
 }
 
 .button-outline:hover{
-    color: #2502c8;
-    border: 3px solid #2502c8;
-    background-color: #eed6ff;
+color: #2502c8;
+border: 3px solid #2502c8;
+background-color: #eed6ff;
 }
 
 .space{
-    width: 100%;
+width: 100%;
 }
-
-
-/* CANVAS MEME**/
-.box-meme{
-    width: 100%;
-    max-width: 610px;
-    height: 610px;
-    background-color: black;
-    position: relative;
-    display: flex;
-    flex-direction:column;
-
-}
-
-.text-meme{
-        width: 100%;
-        background: white;
-        color: black;
-        text-align: center;
-        padding: 35px 50px;
-        font-size: 40px;
-        font-weight: 800;
-        font-family:'Montserrat', sans-serif;  
- }
-
-#top-text{
-    top: 0%;
-}
-
-#botton-text{
-    bottom: 0%;
-
-}
-
-
-
-
-

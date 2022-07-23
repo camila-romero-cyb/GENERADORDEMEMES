@@ -8,51 +8,34 @@
     <link rel="stylesheet" href="./style.css">
     <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300&family=Montserrat&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-
 </head>
 
-<body >
-   
-   <header id="header" >
+<body>
+    <header id="header" >
        <h1 class="primary-title">Generador de memes</h1>
        <div class="buttons"> 
         
-
         <a class="button-nav" style='cursor: pointer;' onclick="mostrarOcultar('section-image')">Imagen</a>
 
         <a class="button-nav" style='cursor: pointer;' onclick="mostrarOcultar('section-text')">Texto</a>
 
-            <button id="modo" class="button-nav"> Modo Oscuro</button>
+         <button id="modo" class="button-nav"> Modo Oscuro</button>
         </div>
    </header>
 
-   <main id="main">
-       <section class="primary-box">
-           <div class="title-one">
-               <p class="top-text"></p>
-           </div>
-
-           <div class="visual-image"></div>
-
-           <div class="title-two">
-               <p class="buttom-text"></p>
-           </div>
-       </section>
-
-
-     
+  
         <aside id="section-image" class="filter-image">
             <h2 class="title-sections">IMAGEN</h2>
             <div class="url">
                 <h5>URL</h5>
-                    <input class="url" type="text">
+                <input class="url" type="text">
             </div>
             <div class="section-background">
                     <div class="background">
                         <h4>FONDO</h4>
                         <input type="color" value="#e693ff">
                     </div>
-                        <div class="row form-group desplegable">                        
+                    <div class="row form-group desplegable">                        
                             <label class="col-12 pl-0"></label>
                             <select class="form-control col-12">
                                 <option value="ACTIVE">Ninguno</option>
@@ -62,7 +45,7 @@
                                 <option value="ACTIVE">Luminosidad</option>
                                 <option value="INACTIVE">Multiplicar</option>
                             </select>                                
-                        </div>           
+                    </div>           
             </div>    
             
                     <div class="filters">
@@ -105,42 +88,47 @@
                         <div class="filter-option">
                             <label> SATURADO </label>
                             <input class="input-slider" type ="range" min="0" max="1" value="1" step="0.1"></input>
-
-                            <div class="filter-option">
-                                <label for="opacity-slider"> NEGATIVO </label>
-                                <input class="input-slider" type ="range" min="0" max="1" value="1" step="0.1"></input>
-                            </div>
-                        </div> 
                         </div>
+
+                        <div class="filter-option">
+                              <label for="opacity-slider"> NEGATIVO </label>
+                             <input class="input-slider" type ="range" min="0" max="1" value="1" step="0.1"></input>
+                        </div>
+                     </div> 
+                
            
                 <button class="filters-reset"> Restablecer Filtros</button>
             </div>
         </aside>
-
-        <div class="box-meme">
-            <p id="renderText" class="text-meme"> TOP TEXT</p>
-            
-       <div>
-       
-       </div>
-       <p id="renderText" class="text-meme"> BOTTOM TEXT </p>
-      
-
-       </div>
-      
+        <main id="main">
+            <section class="primary-box">
+     
+                <div class="title-one">
+                    <p id="renderText" class="text-meme">TOP TEXT</p>
+                </div>
+     
+                <div class="visual-image">
+                </div>
+     
+                <div class="title-two">
+                    <p id="bottonText" class="text-meme">BUTTON TEXT</p>
+                </div>
+     
+            </section>
+     
 
         <aside id="section-text" class="filter-text">
             <h2 class="title-sections">TEXTO</h2>
             <div>
                 <h5> SUPERIOR</h5>
-                <input id="inputText" type="text">
+                <input id="inputText" class="input-slider" type="text">
                 <p id="renderText"></p>
             </div>
 
             <div>
                 <h5>INFERIOR</h5>
-               <input id="inputText" type="text">
-               <p id="renderText"></p>
+               <input id="inputBotton" class="input-slider" type="text">
+               <p id="bottonText"></p>
             </div>
 
             <div>
@@ -163,10 +151,9 @@
 
             <div class="color-text">
                 <div class="incolor">
-                <h5 classe="tittle-items">COLOR</h5>
+                <h5 class="tittle-items">COLOR</h5>
                 <div class="btn-color">
                 <input type="color" id="incolor" value="#000000" aria-label="color de texto">
-                <span id="texto-color"> #000000</span>
             </div>
           
                 <h5>FONDO</h5>
