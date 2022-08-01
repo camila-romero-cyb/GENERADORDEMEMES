@@ -1,5 +1,3 @@
-
-
 //boton modo oscuro
 
 let modo = document.getElementById("modo");
@@ -12,39 +10,27 @@ modo.addEventListener("click", function () {
 
 /* seccion imagen*/
 
+
+
 const mostrar = (elemento) => {
-    elemento.style.display = 'block';
+  elemento.style.display = 'block';
 }
 const ocultar = (elemento) => {
-    elemento.style.display = 'none';
+  elemento.style.display = 'none';
 }
 const mostrarOcultar = (id) => {
   let div = document.getElementById(id);
-    if( window.getComputedStyle(div).display !== 'none' ){
-      ocultar(div);
-      return false;
-    mostrar(div);  
-    } }
+  if( window.getComputedStyle(div).display !== 'none' ){
+    ocultar(div);
+    return false;
+  }
 
+  mostrar(div);
+}
 
   
-  /*color*/
 
-//let color = document.getElementById("color");
-//let codColor = document.getElementById("color_p");
-//let effect = document.getElementById("effect");
-
-//effect.addEventListener('input', () => {
-  //console.log(effect.options.value)
-//})
-
-//color.addEventListener('input', () => {
-  //codColor.innerHTML = `${ color.value }`
-  //document.body.backgroundColor = `${color,value}`
-//})
-
-
-/* TOP TEXT funsiona*/ 
+/* TOP TEXT funciona*/ 
 
 
 const inputText = document.getElementById('inputText');
@@ -59,7 +45,7 @@ inputText.addEventListener('input', (event) => {
   
 })
 
-/* BOTTON TEXT  funsiona*/ 
+/* BOTTON TEXT  funciona*/ 
   
   
 const inputBotton=document.getElementById("inputBotton");
@@ -69,7 +55,15 @@ inputBotton.addEventListener('input', (Event) => {
   const textoIngresadoB = Event.target.value;
   bottonText.innerHTML = textoIngresadoB ;
   
-}) 
+})
+
+
+
+inputBotton.addEventListener('input', (Event) => {
+  const textoIngresadoB = Event.target.value;
+  bottonText.innerHTML = textoIngresadoB ;
   
+}) 
+
 
 

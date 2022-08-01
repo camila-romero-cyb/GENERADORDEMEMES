@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -28,11 +28,12 @@
             <h2 class="title-sections">IMAGEN</h2>
             <div class="url">
                 <h5>URL</h5>
-                <input class="url" type="text">
+                <input type="text" value="" id="imageName"/>
+                <input type="button" id="insert-btn" value="Insertar" />
             </div>
             <div class="section-background">
                     <div class="background">
-                        <h4>FONDO</h4>
+                        <h5>FONDO</h5>
                         <input type="color" value="#e693ff">
                     </div>
                     <div class="row form-group desplegable">                        
@@ -51,47 +52,47 @@
                     <div class="filters">
                         <h5>FILTROS</h5>
                         <div class="filter-option">
-                            <label for="brightness-slider"> BRILLO</label>
-                            <input class="input-slider" type ="range" min="0" max="1" value="1" step="0.1"></input>
+                            <label for="brightness-slider" class="name-filter"> BRILLO</label>
+                            <input class="input-slider algo" type ="range" min="0" max="1" value="1" step="0.1"></input>
                         </div>
 
                         <div class="filter-option"> 
-                            <label  for="opacity-slider">OPACIDAD</label>
+                            <label  for="opacity-slider" class="name-filter">OPACIDAD</label>
                             <input class="input-slider" type ="range" min="0" max="1" value="1" step="0.1"></input>
                         </div>
 
                         <div class="filter-option">
-                            <label for="contrast-slider"> CONTRASTE</label>
+                            <label for="contrast-slider" class="name-filter"> CONTRASTE</label>
                             <input class="input-slider" type ="range" min="100%" max="1000%" value="100%" step="1%"></input>
                         </div>
 
                         <div class="filter-option">
-                            <label for="blur-slider"> DESENFOQUE</label>
+                            <label for="blur-slider" class="name-filter"> DESENFOQUE</label>
                             <input class="input-slider" type ="range" min="0px" max="10px" value="0px" step="0.1px"></input>
                         </div>
 
                         <div class="filter-option">
-                            <label> ESCALA DE GRISES</label>
+                            <label class="name-filter"> ESCALA DE GRISES</label>
                             <input class="input-slider" type ="range" min="0" max="1" value="1" step="0.1"></input>
                         </div>
 
                         <div class="filter-option">
-                            <label> SEPIA </label>
+                            <label class="name-filter"> SEPIA </label>
                             <input class="input-slider" type ="range" min="0" max="1" value="1" step="0.1"></input>
                         </div>
 
                         <div class="filter-option">
-                            <label> HUE </label>
+                            <label class="name-filter"> HUE </label>
                             <input class="input-slider" type ="range" min="0" max="1" value="1" step="0.1"></input>
                         </div>
 
                         <div class="filter-option">
-                            <label> SATURADO </label>
+                            <label class="name-filter"> SATURADO </label>
                             <input class="input-slider" type ="range" min="0" max="1" value="1" step="0.1"></input>
                         </div>
 
                         <div class="filter-option">
-                              <label for="opacity-slider"> NEGATIVO </label>
+                              <label for="opacity-slider" class="name-filter"> NEGATIVO </label>
                              <input class="input-slider" type ="range" min="0" max="1" value="1" step="0.1"></input>
                         </div>
                      </div> 
@@ -108,6 +109,7 @@
                 </div>
      
                 <div class="visual-image">
+                    <img src="http://www.google.com/images">
                 </div>
      
                 <div class="title-two">
@@ -192,7 +194,6 @@
         </aside>
        
    </main>
-
 
 
     <script src="./archivo.js"></script>
