@@ -12,7 +12,6 @@ modo.addEventListener("click", function () {
 /* seccion imagen*/
 
 
-
 const mostrar = (elemento) => {
   elemento.style.display = 'block';
 }
@@ -29,7 +28,18 @@ const mostrarOcultar = (id) => {
   mostrar(div);
 }
 
-  
+let contImg = document.querySelector("#visual-image");
+let imputImg = document.getElementById("imageName");
+imputImg.addEventListener("input", function (event) {
+  contImg.style.backgroundImage =`url(${event.target.value})`
+
+   console.log(event.target.value)
+ })
+
+
+
+
+
 
 /* TOP TEXT funciona*/ 
 

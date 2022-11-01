@@ -20,6 +20,7 @@ body{
 
 /* MEME */
 
+
 .visual-image{
     width: 600px;
     height: 400px;
@@ -29,16 +30,18 @@ body{
 .text-meme {
     text-align: center;
     font-size: 20px;
-    padding: 25px 0px 25px;      
+    padding: 25px 0px 25px;  
+    background-color: #eed6ff;
+    color:hsl(251, 50%, 41%);
 }
 
 .primary-box{
-background-color: rgb(244, 228, 255);
-width: 600px;
-height: 550px;
-margin: auto;
-}
-
+    
+    width: 600px;
+    height: 550px;
+    margin: auto;
+    }
+    
 /* chequear*/
 
 .primary-title{
@@ -99,9 +102,14 @@ text-align: center;
 margin-bottom: 10px;
 }
 
-.text-meme{
-    color: hsl(251, 62%, 49%);
+#visual-image{
+background-color: black;
+width: 600px; 
+height: 500px;
 }
+
+
+
 
 .filter-image{
 background-color: hsl(251, 50%, 41%);
