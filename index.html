@@ -7,7 +7,7 @@
     <title>Generador de memes </title>
     <link rel="stylesheet" href="./style.css">
     <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300&family=Montserrat&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    
 </head>
 
 <body>
@@ -15,16 +15,16 @@
        <h1 class="primary-title">Generador de memes</h1>
        <div class="buttons"> 
         
-        <a class="button-nav" style='cursor: pointer;' onclick="mostrarOcultar('section-image')">Imagen</a>
+        <button id="btnImg" class="button-nav">Imagen </button> 
 
-        <a class="button-nav" style='cursor: pointer;' onclick="mostrarOcultar('section-text')">Texto</a>
+       <button id="btnText" class="button-nav"> Texto</button>
 
          <button id="modo" class="button-nav"> Modo Oscuro</button>
         </div>
    </header>
 
   
-        <aside id="section-image" class="filter-image">
+        <aside id="sectionImage" class="filter-image">
             <h2 class="title-sections">IMAGEN</h2>
             <div class="url">
                 <h5>URL</h5>
@@ -49,7 +49,7 @@
                     </div>           
             </div>    
             
-                    <div class="filters">
+                    <div id="sectionFilter" class="filters">
                         <h5>FILTROS</h5>
                         <div class="filter-option">
                             <label for="brightness-slider" class="name-filter"> BRILLO</label>
@@ -102,13 +102,13 @@
             </div>
         </aside>
         <main id="main">
-            <section class="primary-box">
+            <section id="primaryBox">
      
                 <div class="title-one">
                     <p id="renderText" class="text-meme"> TOP TEXT</p>
                 </div>
      
-                <div id="visual-image">
+                <div id="visualImage">
                     
                 </div>
      
@@ -117,7 +117,7 @@
                 </div>
 
                 <div>
-                    <button class="button-desc"> Descargar </button>
+                    <button  id="buttonDesc"> Descargar </button>
                 </div>
      
             </section>
