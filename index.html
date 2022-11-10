@@ -7,7 +7,13 @@
     <title>Generador de memes </title>
     <link rel="stylesheet" href="./style.css">
     <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300&family=Montserrat&display=swap" rel="stylesheet">
-    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.0/FileSaver.min.js"
+    integrity="sha512-csNcFYJniKjJxRWRV1R7fvnXrycHP6qDR21mgz1ZP55xY5d+aHLfo9/FcGDQLfn2IfngbAHd8LdfsagcCqgTcQ=="
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/dom-to-image/2.6.0/dom-to-image.min.js"
+    integrity="sha512-01CJ9/g7e8cUmY0DFTMcUw/ikS799FHiOA0eyHsUWfOetgbx/t6oV4otQ5zXKQyIrQGTHSmRVPIgrgLcZi/WMA=="
+    crossorigin="anonymous"></script>
+
 </head>
 
 <body>
@@ -102,9 +108,10 @@
             </div>
         </aside>
         <main id="main">
+            
             <section id="primaryBox">
-     
-                <div class="title-one">
+                <div class="pruebaDsc">
+                <div id="tittleOne">
                     <p id="renderText" class="text-meme"> TOP TEXT</p>
                 </div>
      
@@ -112,14 +119,14 @@
                     
                 </div>
      
-                <div class="title-two">
+                <div id="tittleTwo">
                     <p id="bottonText" class="text-meme">BUTTON TEXT</p>
                 </div>
 
-                <div>
-                    <button  id="buttonDesc"> Descargar </button>
+                <div class="btnDesc">
+                    <button  id="bottonDesc"> Descargar </button>
                 </div>
-     
+                        </div>
             </section>
      
 
@@ -155,7 +162,7 @@
                 </div>  
             </div>
 
-            <div class="color-text">
+            <div id="color-text">
                 <div class="incolor">
                 <h5 class="tittle-items">COLOR</h5>
                 <div class="btn-color">
@@ -163,7 +170,7 @@
             </div>
           
                 <h5>FONDO</h5>
-                <input type="color" value="#FFFFFF">
+                <input id="backgroundText" type="color" value="#FFFFFF">
                 <input type="checkbox">Fondo Transparente</input>
             
 

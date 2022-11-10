@@ -9,7 +9,7 @@ modo.addEventListener("click", function () {
 })
 
 
-
+/*aside */
 
 
 let sectionFilter = document.querySelector("#section-text");
@@ -68,19 +68,51 @@ inputBotton.addEventListener('input', (Event) => {
   
 })
 
-/*boton descarga*/
+/*boton descarga funciona */
+
+
+const $=(selector) =>document.querySelector(selector)
 
 
 
-
-
-/*let divImg = getElementById("primaryBox");
-let buttonDesc = getElementById("buttonDesc");
+let bottonDesc = $("#bottonDesc");
 
 const descMeme = () => {
-  domtoimage.toBlob('CAMBIAR').then(funcion(blob)); {
-    saveAs(blob, 'meme-jpg');
-  }
-  }
+  domtoimage.toBlob($('.pruebaDsc')).then(function(blob){
+    saveAs(blob,"meme.png");
+  });
+};
 
-buttonDesc.addEventListener("click", descMeme);*/
+bottonDesc.addEventListener("click", descMeme);
+
+/* fondo color text*/
+
+let topTextContainer = document.getElementById("tittleOne");
+let bottomTextContainer = document.getElementById("tittleTwo");
+let backgroundText = document.getElementById("backgroundText");
+
+backgroundText.addEventListener('blur', (event) => {
+  let backgroundColorText = event.target.value;
+  topTextContainer.style.backgroundColor = backgroundColorText;
+});
+
+backgroundText.addEventListener('blur', (event) => {
+  let backgroundColorText = event.target.value;
+  bottomTextContainer.style.backgroundColor = backgroundColorText;
+});
+
+/* color text*/
+
+let colorText = document.getElementById("color-text");
+
+colorText.addEventListener('blur', (event) =>{
+  let colorText = event.target.value;
+  topText.style.color = colorText;
+})
+
+colorText.addEventListener('blur', (event) =>{
+  let colorText = event.target.value;
+  bottonText.style.color = colorText;
+})
+
+
