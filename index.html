@@ -40,7 +40,7 @@
             <div class="section-background">
                     <div class="background">
                         <h5>FONDO</h5>
-                        <input type="color" value="#e693ff">
+                        <input id="section-background" type="color" value="#e693ff">
                     </div>
                     <div class="row form-group desplegable">                        
                             <label class="col-12 pl-0"></label>
@@ -57,54 +57,54 @@
             
                     <div id="sectionFilter" class="filters">
                         <h5>FILTROS</h5>
-                        <div class="filter-option">
+                        <div  class="filter-option">
                             <label for="brightness-slider" class="name-filter"> BRILLO</label>
-                            <input class="input-slider algo" type ="range" min="0" max="1" value="1" step="0.1"></input>
+                            <input id="brightness-slider"   type ="range" min="0" max="1" value="1" step="0.1"></input>
                         </div>
 
                         <div class="filter-option"> 
                             <label  for="opacity-slider" class="name-filter">OPACIDAD</label>
-                            <input class="input-slider" type ="range" min="0" max="1" value="1" step="0.1"></input>
+                            <input id="opacity-slider" type ="range" min="0" max="1" value="1" step="0.1"></input>
                         </div>
 
                         <div class="filter-option">
                             <label for="contrast-slider" class="name-filter"> CONTRASTE</label>
-                            <input class="input-slider" type ="range" min="100%" max="1000%" value="100%" step="1%"></input>
+                            <input id="contrast-slider" type ="range" min="100%" max="1000%" value="100%" step="1%"></input>
                         </div>
 
                         <div class="filter-option">
                             <label for="blur-slider" class="name-filter"> DESENFOQUE</label>
-                            <input class="input-slider" type ="range" min="0px" max="10px" value="0px" step="0.1px"></input>
+                            <input id="blur-slider" type ="range" min="0px" max="10px" value="0px" step="0.1px"></input>
                         </div>
 
                         <div class="filter-option">
-                            <label class="name-filter"> ESCALA DE GRISES</label>
-                            <input class="input-slider" type ="range" min="0" max="1" value="1" step="0.1"></input>
+                            <label for="grey-slider" class="name-filter"> ESCALA DE GRISES</label>
+                            <input id="grey-slider" type ="range" min="0" max="1" value="1" step="0.1"></input>
                         </div>
 
                         <div class="filter-option">
-                            <label class="name-filter"> SEPIA </label>
-                            <input class="input-slider" type ="range" min="0" max="1" value="1" step="0.1"></input>
+                            <label for="sepia-slider" class="name-filter"> SEPIA </label>
+                            <input id="sepia-slider" type ="range" min="0" max="1" value="1" step="0.1"></input>
                         </div>
 
                         <div class="filter-option">
-                            <label class="name-filter"> HUE </label>
-                            <input class="input-slider" type ="range" min="0" max="1" value="1" step="0.1"></input>
+                            <label for="sepia-slider" class="name-filter"> HUE </label>
+                            <input id="hue-slider" type ="range" min="0" max="1" value="1" step="0.1"></input>
                         </div>
 
                         <div class="filter-option">
-                            <label class="name-filter"> SATURADO </label>
-                            <input class="input-slider" type ="range" min="0" max="1" value="1" step="0.1"></input>
+                            <label for="saturado-slider" class="name-filter"> SATURADO </label>
+                            <input id="saturado-slider" type ="range" min="0" max="1" value="1" step="0.1"></input>
                         </div>
 
                         <div class="filter-option">
                               <label for="opacity-slider" class="name-filter"> NEGATIVO </label>
-                             <input class="input-slider" type ="range" min="0" max="1" value="1" step="0.1"></input>
+                             <input id="opacity-slider" type ="range" min="0" max="1" value="1" step="0.1"></input>
                         </div>
                      </div> 
                 
            
-                <button class="filters-reset"> Restablecer Filtros</button>
+                <button id="resetFilter" class="filters-reset"> Restablecer Filtros</button>
             </div>
         </aside>
         <main id="main">
@@ -115,7 +115,7 @@
                     <p id="renderText" class="text-meme"> TOP TEXT</p>
                 </div>
      
-                <div id="visualImage">
+                <div  id="visualImage" >
                     
                 </div>
      
@@ -162,11 +162,11 @@
                 </div>  
             </div>
 
-            <div id="color-text">
+            <div >
                 <div class="incolor">
                 <h5 class="tittle-items">COLOR</h5>
                 <div class="btn-color">
-                <input type="color" id="incolor" value="#000000" aria-label="color de texto">
+                <input id="color-text" type="color" id="incolor" value="#000000" aria-label="color de texto">
             </div>
           
                 <h5>FONDO</h5>

@@ -56,11 +56,25 @@ inputText.addEventListener('input', (event) => {
   
 })
 
+/* fondo imagen*/
+
+let backgroundImage = document.getElementById("section-background");
+
+backgroundImage.addEventListener('blur', (event) => {
+  let backgroundColorImage = event.target.value;
+  console.log(backgroundColorImage);
+  backgroundImage.style.backgroundColor = backgroundColorImage;
+  
+});
+
+
+
+
 /* BOTTON TEXT  funciona*/ 
   
   
 const inputBotton=document.getElementById("inputBotton");
-const bottonText = document.getElementById('bottonText');
+let bottonText = document.getElementById('bottonText');
 
 inputBotton.addEventListener('input', (Event) => {
   const textoIngresadoB = Event.target.value;
@@ -101,18 +115,57 @@ backgroundText.addEventListener('blur', (event) => {
   bottomTextContainer.style.backgroundColor = backgroundColorText;
 });
 
-/* color text*/
 
+
+
+
+
+/* color text*/
 let colorText = document.getElementById("color-text");
 
 colorText.addEventListener('blur', (event) =>{
   let colorText = event.target.value;
-  topText.style.color = colorText;
-})
+  renderText.style.color = colorText;
+});
 
-colorText.addEventListener('blur', (event) =>{
+colorText.addEventListener('blur', (event) => {
   let colorText = event.target.value;
   bottonText.style.color = colorText;
-})
+});
+
+/* filtros*/
+
+/*brillo*/
+
+let brightnessImg = document.getElementById("brightness-slider");
+let opacityImg = document.getElementById("opacity-slider");
+let contrastImg = document.getElementById("contrast-slider");
+
+
+const actualizarFiltros = () => {
+  contImg.style.filter = `brightneess(${brightnessImg.value}) opacity(${opacityImg.value}) contrast(${contrastImg.value})`;
+  };
+
+brightnessImg.addEventListener("changue", actualizarFiltros);
+opacityImg.addEventListener("change", actualizarFiltros);
+contrastImg.addEventListener("change", actualizarFiltros);
+
+
+
+
+/* boton reset*/
+
+
+let resertFilter = document.getElementById("resetFilter");
+const resetarFiltros = () => {
+  brightnessImg.value = 100;
+  opacityImg.value = 100;
+  
+
+  actualizarFiltros();
+};
+
+resertFilter.addEventListener('click', resetarFiltros);
+
 
 
